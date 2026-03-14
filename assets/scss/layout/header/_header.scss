@@ -1,0 +1,108 @@
+@use '../../utils/' as *;
+
+.cd-header-area {
+
+    &-transparent {
+        position: absolute;
+        top: 26px;
+        left: 0px;
+        right: 0px;
+    }
+
+    &-row {
+        background-color: var(--cd-white-color);
+    }
+
+    &-logo-box {
+        background-color: var(--cd-primary-color);
+        width: 200px;
+        padding: 20px 16px;
+        position: relative;
+    }
+
+    &-rectangle {
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: var(--cd-primary-color);
+            clip-path: polygon(100% 50%, 0% 0%, 0% 100%);
+            transform: rotate(0deg);
+            width: 22px;
+            height: 77px;
+            top: 0;
+            left: 200px;
+
+        }
+    }
+
+    // nav menu............................
+
+    &-menu {
+        margin-left: 50px;
+
+        & ul {
+            & li {
+                display: inline-block;
+                margin-right: 40px;
+                position: relative;
+
+
+                & a {
+                    color: var(--cd-primary-color);
+                    font-size: 16px;
+                    font-weight: 600;
+                    display: inline-block;
+                    padding: 24px 0px;
+                }
+
+                &:hover {
+                    &>a {
+                        color: var(--cd-theme-color);
+                    }
+
+                    &>.sub-menu {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 100%;
+                    }
+                }
+
+                & .sub-menu {
+                    position: absolute;
+                    background-color: var(--cd-white-color);
+                    top: 105%;
+                    left: 0;
+                    width: 220px;
+                    padding: 18px 0px;
+                    border-radius: 5px;
+                    @include cd-transition();
+                    opacity: 0;
+                    visibility: hidden;
+
+                    & li {
+                        margin-right: 0px;
+                        display: block;
+
+                        & .sub-menu {
+                            left: 105%;
+                            top: 0;
+                        }
+
+                        &:hover>.sub-menu {
+                            left: 100%;
+                            top: 0;
+                        }
+
+                        & a {
+                            padding: 3px 28px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+;

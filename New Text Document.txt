@@ -1,0 +1,1 @@
+sass --watch "/Users/chandanhaldar/Desktop/project/html/helpplus/assets/scss/main.scss":"/Users/chandanhaldar/Desktop/project/html/helpplus/assets/css/style.css"
