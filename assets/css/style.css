@@ -342,8 +342,27 @@ img {
   left: 0px;
   right: 0px;
 }
+.cd-header-area-right {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.cd-header-area-cta {
+  background-color: orange;
+  padding: 20px 32.5px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
 .cd-header-area-row {
   background-color: var(--cd-white-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .cd-header-area-logo-box {
   background-color: var(--cd-primary-color);

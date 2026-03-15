@@ -9,8 +9,31 @@
         right: 0px;
     }
 
+    // Button right................
+    &-right {
+
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+
+    &-cta {
+        background-color: orange;
+        padding: 20px 32.5px;
+        border-radius: 10px;
+        margin-right: 5px;
+    }
+
     &-row {
         background-color: var(--cd-white-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     &-logo-box {
