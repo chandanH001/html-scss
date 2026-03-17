@@ -1,1 +1,7 @@
 @use '../utils/' as *;
+
+@for $i from 1 through 20 {
+    .ml-#{5*$i} {
+        margin-left: 5px * $i;
+    }
+}
