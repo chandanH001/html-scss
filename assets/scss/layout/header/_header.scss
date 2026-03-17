@@ -1,39 +1,26 @@
 @use '../../utils/' as *;
 
 .cd-header-area {
-
     &-transparent {
         position: absolute;
         top: 26px;
         left: 0px;
         right: 0px;
+
     }
 
     // Button right................
     &-right {
-
-        display: flex;
         gap: 20px;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: flex-end;
-        align-items: center;
         width: 100%;
-    }
+        padding-right: 5px;
 
-    &-cta {
-        background-color: orange;
-        padding: 20px 32.5px;
-        border-radius: 10px;
-        margin-right: 5px;
     }
 
     &-row {
         background-color: var(--cd-white-color);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        border-radius: 5px;
+
     }
 
     &-logo-box {
@@ -41,6 +28,8 @@
         width: 200px;
         padding: 20px 16px;
         position: relative;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
 
     &-rectangle {
@@ -124,6 +113,12 @@
                 }
             }
 
+        }
+    }
+
+    &-cta-phone {
+        & svg {
+            margin-right: 5px;
         }
     }
 }
