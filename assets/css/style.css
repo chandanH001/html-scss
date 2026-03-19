@@ -507,6 +507,10 @@ img {
   margin-right: 5px;
 }
 
+.cd-hero-area {
+  background-image: url(/assets/icon/art-circles-2500-02.svg);
+}
+
 .cd-btn {
   background-color: var(--cd-theme-color);
   padding: 20px 45px;
